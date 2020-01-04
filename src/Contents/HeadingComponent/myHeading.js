@@ -38,7 +38,7 @@ class MyHeadingComponent extends React.Component {
 		};
 		return (
 			<div className="myHeadingClass">
-				<span>HULU - LULU</span>
+				<span>Automated Reporting Tool</span>
 				<span className="myHeadingButtonClass">
 					<Button
 					aria-owns={this.state.anchorEl ? 'simple-menu' : undefined}

@@ -15,7 +15,7 @@ class MyDateQuoteComponent extends React.Component{
 		return(
 			<div className='MyDateQuoteComponent'>
 				<div className='QuoteComponent'>
-					A Good Programmer looks both ways before crossing a One-Way street. - Sony
+					A Good Programmer looks both ways before crossing a One-Way street.
 				</div>
 				<div className='DateComponent'>
 					<div>{this.state.date}</div>
