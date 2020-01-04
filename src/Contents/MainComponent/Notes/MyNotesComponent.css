@@ -1,0 +1,51 @@
+.MyNotesComponent{
+	margin-top:5px;
+	padding:1%
+}
+.MyNotesAddComponent{
+	padding:1%;
+	width:20%;
+	height:450px;
+	border-right: 1px solid grey;
+	float:left;
+	margin-right: 10px;
+}
+.MyNotesTableComponent{
+	padding:1%;
+	width:70%;
+	height:450px;
+	float:left;
+	overflow:auto;
+}
+.fNameTabelCell{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 10px;
+    display: block;
+    overflow: hidden
+
+}
+
+.MyDatePicker{
+	display: 'flex';
+    flexWrap: 'wrap';
+}
+.AddIcon{
+	margin-left:2%;
+	margin-top: 20%;
+}
+.noDataMessage{
+	margin:50px;
+	height:350px !important;
+	text-align:center;
+	color:red;
+}
+
+DeleteForever:hover{
+  background-color: #4CAF50;
+  pointer-events: bounding-box;
+}
+
+.formControl{
+	margin-top:100px !important;
+}

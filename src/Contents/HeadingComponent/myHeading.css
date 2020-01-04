@@ -1,0 +1,19 @@
+.myHeadingClass{
+	color:white;
+	text-align:left;
+	height:50px;
+	line-height: 45px;
+	padding-left:20px;
+	font-size:30px;
+	font-family: cursivemonospace;
+	background:#2780E3
+}
+
+.myHeadingButtonClass{
+	float:right;
+	padding-right:20px;
+}
+
+.myHeadingButtonClass Button{
+	color:white;
+}

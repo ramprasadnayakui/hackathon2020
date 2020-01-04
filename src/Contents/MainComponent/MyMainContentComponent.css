@@ -1,0 +1,35 @@
+.MyMainContentComponent{
+	display: flex;
+	min-height: 80vh;
+}
+.MyMainSideBarComponent{
+	flex-grow: 0;
+	background: #343a40 !important
+}
+
+.MyMainTargetComponent{
+	flex-grow: 1;
+}
+
+ul {
+	text-align: left;
+	padding:0 20px 0 20px;
+}
+
+li { 
+	list-style: none;
+	line-height:30px;
+	color:white;
+}
+
+li .material-icons{
+	padding-right:5px;
+	line-height: 33px;
+}
+
+li a {
+	text-decoration: none;
+	font-family: serif;
+	font-size:18px;
+	color:rgba(255, 255, 255, 0.9);
+}

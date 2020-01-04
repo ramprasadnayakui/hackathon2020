@@ -1,0 +1,44 @@
+.MyCalculatorComponent{
+	margin-top:2%;
+	padding: 5px 10px;
+	border: 1px solid;
+    height: auto;
+    width: 440px;
+    padding-top: 25px;
+	padding-left: 30px;
+	background-color: #ddd;
+}
+
+
+.calculatorResultDisplay{
+	height: 50px;
+	background-color: white;
+	max-width: 408px;
+	border: 1px solid gray;
+
+}
+
+.row1,.row2,.row3,.row4,.row5{
+	display: table-row;
+	min-width: 800px;
+	background-color: aquamarine;
+	
+}
+
+.row1 div,.row2 div,.row3 div,.row4 div,.row5 div{
+	display: table-cell;
+	min-width: 100px;
+	background-color: grey;
+	color: black;
+	vertical-align: middle;
+	text-align: center;
+	margin: 5px 4px 5px;
+	height: 60px;
+	border: 1px solid #ccc;
+	font-weight: bold;
+}
+
+.row1 div:hover,.row2 div:hover,.row3 div:hover,.row4 div:hover,.row5 div:hover{
+	background-color: #444;
+	color: white;
+}
