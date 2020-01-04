@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import TextField from '@material-ui/core/TextField';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -23,12 +24,20 @@ class LoginComponent extends React.Component {
 	}
 
     login(){
-        this.setState({
+        /*this.setState({
 			isLoginSubmitted : true
 		}, function(){
 			//After performing validations pass the username & password in the below method to perform the actual behaviour
 			this.props.dispatch(actions.loginUser(this.state.username,this.state.password));
-		});
+		});*/
+
+		const user = {empId : this.state.username}
+	  
+		  axios.post(`http://localhost:8080/hackathon/login`, user )
+			.then(res => {
+			  console.log(res);
+			  console.log(res.data);
+			})
 	}
 
 	componentDidUpdate(state,props){

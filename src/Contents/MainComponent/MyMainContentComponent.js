@@ -22,13 +22,13 @@ class MyMainContentComponent extends React.Component{
 						<Icon>home</Icon><Link to="/">Home</Link>
 					  </li>
 					  <li>
-						<Icon>chrome_reader_mode</Icon><Link to="/cal">Calculator(Sri Ramana)</Link>
+						<Icon>chrome_reader_mode</Icon><Link to="/cal">POC</Link>
 					  </li>
 					  <li>
-						<Icon>note_add</Icon><Link to="/notes">Add Details(Ram)</Link>
+						<Icon>note_add</Icon><Link to="/notes">Resourcing</Link>
 					  </li>
 					  <li>
-						<Icon>games</Icon><Link to="/ttt">Tic Tac Toe Game (Harsha)</Link>
+						<Icon>games</Icon><Link to="/ttt">Custom Template</Link>
 					  </li>
 					</ul>
 				</div>
