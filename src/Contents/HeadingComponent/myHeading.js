@@ -39,29 +39,6 @@ class MyHeadingComponent extends React.Component {
 		return (
 			<div className="myHeadingClass">
 				<span>Automated Reporting Tool</span>
-				<span className="myHeadingButtonClass">
-					<Button
-					aria-owns={this.state.anchorEl ? 'simple-menu' : undefined}
-					aria-haspopup="true"
-					onClick={this.handleClick}
-					>
-						Menu
-        			</Button>
-					<Menu
-						id="simple-menu"
-						anchorEl={this.state.anchorEl}
-						open={Boolean(this.state.anchorEl)}
-						onClose={this.handleClose}
-					>
-						<MenuItem onClick={this.handleClose}>Sign Up</MenuItem>
-						<MenuItem>
-							<BrowserRouter>
-								<Link to="/login">Log In</Link>
-							</BrowserRouter>
-						</MenuItem>
-						<MenuItem onClick={this.handleClose}>Any Other Items</MenuItem>
-					</Menu>
-				</span>
 			</div>
 		);
 	}

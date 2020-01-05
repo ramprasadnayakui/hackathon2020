@@ -38,7 +38,8 @@ class LoginComponent extends React.Component {
 			  console.log(res);
 			  console.log(res.data);
 			  this.setState({
-				isLoginSubmitted : true
+				isLoginSubmitted : true,
+				data : res.data
 				})
 			})
 	}
@@ -46,7 +47,7 @@ class LoginComponent extends React.Component {
 	componentDidUpdate(state,props){
 		console.log(props);
 		if(props.isLoginSubmitted){
-			this.props.history.push("/main");
+			this.props.history.push("/main",{ data: props.data});
 		}
 	}
 	

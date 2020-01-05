@@ -12,25 +12,53 @@ import TTT from './TTT/TTTMain';
 import Icon from '@material-ui/core/Icon';
 
 class MyMainContentComponent extends React.Component{
-	render(){
-		return(
-			<BrowserRouter>
-			  <div className="MyMainContentComponent">
-				<div className="MyMainSideBarComponent">
-					<ul>
-					  <li>
-						<Icon>home</Icon><Link to="/">Home</Link>
-					  </li>
-					  <li>
-						<Icon>chrome_reader_mode</Icon><Link to="/cal">POC</Link>
-					  </li>
-					  <li>
+	constructor(props){
+		super(props);
+		this.state={ 
+			userName : props.location.state.data.employee.name,
+			userRole : props.location.state.data.employee.role,
+		};
+	}
+
+	renderElement(){
+		if(this.state.userRole == 'PM'){
+			 return(
+			 <ul>
+				<li>
+				<Icon>chrome_reader_mode</Icon><Link to="/cal">POC</Link>
+				</li>
+				</ul>
+			 )
+		} else if(this.state.userRole == 'DM'){
+			return(
+			<ul>
+				<li>
 						<Icon>note_add</Icon><Link to="/notes">Resourcing</Link>
 					  </li>
 					  <li>
 						<Icon>games</Icon><Link to="/ttt">Custom Template</Link>
 					  </li>
-					</ul>
+			 </ul>
+			)
+	 }
+ }
+
+
+	render(){
+		return(
+			<BrowserRouter>
+			  <div className="MyMainContentComponent">
+				<div className="MyMainSideBarComponent">
+				<div className="loggedInPerson">
+					{this.state.userName} - 
+					{this.state.userRole}
+				</div>
+				<ul>
+				 <li>
+				<Icon>home</Icon><Link to="/">Home</Link>
+				</li>
+				</ul>
+				{ this.renderElement() }
 				</div>
 
 				<div className="MyMainTargetComponent">

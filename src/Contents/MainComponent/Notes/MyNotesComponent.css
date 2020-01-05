@@ -49,3 +49,7 @@ DeleteForever:hover{
 .formControl{
 	margin-top:100px !important;
 }
+
+.loggedInPerson{
+	color: yellow;
+}
